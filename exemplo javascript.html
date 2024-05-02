@@ -21,20 +21,26 @@
         }
 
     </style>
+    <script>
+        function atualizarNome() {
+            var nome = prompt("Insira um novo nome");
+            this.textContent = "Jogador 1: " + nome;
+        }
+    </script>
     
 </head>
 <body>
-    <p>Jogador 1</p>
+    <p onclick="atualizarNome">Jogador 1</p>
 </body>
 <script>
-    const para = document.querySelector("p");
+    // const para = document.querySelector("p");
 
-    para.addEventListener("click", atualizarNome);
+    // para.addEventListener("click", atualizarNome);
 
-    function atualizarNome() {
-        var nome = prompt("Insira um novo nome");
-        para.textContent = "Jogador 1: " + nome;
-    }
+    // function atualizarNome() {
+    //     var nome = prompt("Insira um novo nome");
+    //     para.textContent = "Jogador 1: " + nome;
+    // }
 
 </script>
 </html>
